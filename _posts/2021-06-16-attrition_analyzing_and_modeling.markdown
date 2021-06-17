@@ -88,9 +88,11 @@ Employees with less worked years tend to quit more than those who have less.
 
 ### Exploring Percent Salary Hike
 
-As you can see, employees who recieved the highest percent salary hike leaved more than others. This make me thing if the company has a good plan to retain talent.
+As you can see, employees who recieved the highest percent salary hike leaved more than others. This make me think if the company has a good plan to retain talent.
 
 ![](https://i.imgur.com/Upt5gG0.png)
+
+
 
 After analyze each variable I dropped 'EmployeeCount', 'StandardHours', 'PerformanceRating', 'StockOptionLevel', 'Ages', 'Income' and 'Over18'.
 
@@ -98,9 +100,16 @@ Once the exploration work is done, I created dummy variables for categorical. We
 
 ## Modeling
 
-First step, as we know, we separate our target variable (Attrition) in a different data frame called “y”, the rest of variables are saved in a data frame called “X”. Once this is done, we scale our “X” data frame, this means that all the values are transformed in a 0 to 1 scale. Standard Scaler is used just for logistic regression, in models like Random Forest Classifier is not necessary.
+First step, as we know, we separate our target variable (Attrition) in a different data frame called “y”, the rest of variables are saved in a data frame called “X”. Once this is done, we scale our “X” data frame, this means that all the values are transformed in a 0 to 1 scale. Standard Scaler was used just for logistic regression, in models like Random Forest Classifier is not necessary.
 
 This is the most important step of modeling: Choose your model.
+
+### Results
+
+* Logistic Regression Score :  0.84
+* Random Forest Score :  0.93
+* Decision Trees Score :  0.86
+* Adaboost Score :  0.84
 
 Looking at the results I am selecting Random Forest Classifier for its 93% accuracy, but I am also interested in how this model could impact on medium - long term. This is not just about who is prone to leave. To me, this is more about how the company should pay more attention on hiring and retainment staff. That is the reason why I am choosing Random Forest Classifier as the best model for this case. The model predicts the higher number of true positives compared with the other models. It also predicts that 65 are going to leave the company but they are actually not. This is called a False Positive and, in this case, for this company, means that those employees could have a high risk to leave, it is like a yellow flag to track them. Here I ask myself: Can the Human Resources department handle or support other departments with this? They have the highest percentage of attrition, and it seems that HR employees are not happy working there, I mean, HR have serious problems to solve first.
 
