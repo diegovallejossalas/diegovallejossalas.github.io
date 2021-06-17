@@ -78,7 +78,7 @@ Attrition on single employees is considerable higher than married and divorced.
 
 ### Exploring Total Working Years
 
-Employees with less worked years tend to quit more than those who have less.
+Employees with less worked years tend to quit more than those who have more experience.
 
 ![](https://i.imgur.com/ZrPaR8X.png)
 
