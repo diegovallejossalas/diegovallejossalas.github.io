@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Attrition: Analyzing and Modeling "
-date:       2021-06-16 04:09:34 +0000
+date:       2021-06-16 00:09:35 -0400
 permalink:  attrition_analyzing_and_modeling
 ---
 
@@ -34,7 +34,7 @@ Here I want to mention just some of the variables that have a mayor impact direc
 This is our target variable, and the first action is to transform values from object to numerical and then I got some insights about it. 16% of employees leaved the company last year. This number could be tricky when you try to understand it because it may vary between different variables. When we talk about attrition, we necessarily talk about money that leaks out, is a hidden cost, hard to track and hard to explain too. That is why sometimes companies explain its cost with time invested on training or customer service quality.
 It is part of the exploration to compare variables by attrition and we must pay attention on those whose have an attrition percentage considerable upper or lower than 16.
 
-![](https://imgur.com/AUwnYwp)
+![](https://i.imgur.com/AUwnYwp.png)
 
 ### Exploring Job Involvement
 
@@ -54,19 +54,19 @@ We can see that the attrition decreases dramatically when the employee has 6 tra
 It seems like the first year with a new manager is critical for attrition. Around 30% of those employees leave the company.
 That makes us think about the impact in employee’s attrition when a manager leaves the company.
 
-![](https://imgur.com/cD7v2Dd)
+![](https://i.imgur.com/s030PK5.png)
 
 ### Exploring Age
 
 To get a better sense about how age can affect attrition I decided to add a column that divides ages by groups. This visualization helped me to confirm that attrition’s level is higher on younger employees.
 
-![](https://imgur.com/pSXE9N6)
+![](https://i.imgur.com/pSXE9N6.png)
 
 ### Exploring Business Travel category
 
 We can clearly see that employees that travel frequently have a higher percentage of attrition.
 
-![](https://imgur.com/zypyyiT)
+![](https://i.imgur.com/zypyyiT.png)
 
 ### Exploring Department
 
@@ -80,7 +80,7 @@ Attrition on single employees is considerable higher than married and divorced.
 
 Employees with less worked years tend to quit more than those who have less.
 
-![](https://imgur.com/YCLHdDo)
+![](https://i.imgur.com/ZrPaR8X.png)
 
 ### Exploring Years At Company
 
@@ -90,7 +90,7 @@ Employees with less worked years tend to quit more than those who have less.
 
 As you can see, employees who recieved the highest percent salary hike leaved more than others. This make me thing if the company has a good plan to retain talent.
 
-![](https://imgur.com/Upt5gG0)
+![](https://i.imgur.com/Upt5gG0.png)
 
 After analyze each variable I dropped 'EmployeeCount', 'StandardHours', 'PerformanceRating', 'StockOptionLevel', 'Ages', 'Income' and 'Over18'.
 
@@ -104,7 +104,7 @@ This is the most important step of modeling: Choose your model.
 
 Looking at the results I am selecting Random Forest Classifier for its 93% accuracy, but I am also interested in how this model could impact on medium - long term. This is not just about who is prone to leave. To me, this is more about how the company should pay more attention on hiring and retainment staff. That is the reason why I am choosing Random Forest Classifier as the best model for this case. The model predicts the higher number of true positives compared with the other models. It also predicts that 65 are going to leave the company but they are actually not. This is called a False Positive and, in this case, for this company, means that those employees could have a high risk to leave, it is like a yellow flag to track them. Here I ask myself: Can the Human Resources department handle or support other departments with this? They have the highest percentage of attrition, and it seems that HR employees are not happy working there, I mean, HR have serious problems to solve first.
 
-![](https://imgur.com/gKhgXPE)
+![](https://i.imgur.com/gKhgXPE.png)
 
 
 
