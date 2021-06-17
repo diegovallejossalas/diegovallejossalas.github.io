@@ -1,11 +1,11 @@
 # Site settings
-author: Luis Diego Vallejos
-title: 
+author: Diego Vallejos
+title: A little bug
 header-img: img/home-bg.png
 email: xdiegovallejosx@gmail.com
-copyright_name: Luis Diego Vallejos
+copyright_name: Diego Vallejos
 description: > # this means to ignore newlines until "baseurl:"
-  
+  The path of someone who used to hate math
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  diegovallejossalas
