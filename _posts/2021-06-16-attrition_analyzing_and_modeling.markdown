@@ -117,6 +117,6 @@ Looking at the results I am selecting Random Forest Classifier for its 93% accur
 
 
 
-Before I finish, I want to thank you for the time you spent reading this. I would love any feedback and if you are interested In the Human Resources world too or have any question, feel free to contact me on LinkedIn [](https://www.linkedin.com/in/diegoval/).
+Before I finish, I want to thank you for the time you spent reading this. I would love any feedback and if you are interested In the Human Resources world too or have any question, feel free to contact me on [LinkedIn](https://www.linkedin.com/in/diegoval/).
 
 
