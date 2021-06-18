@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Attrition: Analyzing and Modeling "
+title:      "Human Resources Case: Analyzing and Modeling "
 date:       2021-06-16 00:09:35 -0400
 permalink:  attrition_analyzing_and_modeling
 ---
@@ -11,27 +11,28 @@ For this project I am using the HR Analytics Case Study dataset that contains in
 
 The data includes 5 datasets but for this project I am using 3. The first one includes information about education, salaries, gender, marital status, years at company and more. The second and third datasets are surveys. One of them is about job satisfaction and the other one is about performance. 
 
-As I always do, all the libraries go together at the beginning. They basically are Pandas, Numpy, Matplotlib, Seaborn and Sklearn for modeling. 
 
 ## Obtaining and Scrubbing
 
+As I always do, all the libraries go together at the beginning. They basically are Pandas, Numpy, Matplotlib, Seaborn and Sklearn for modeling. 
+
 This dataset gives us a dictionary where we can find an explanation, so this makes us save some time searching in the web.
 
-Looking at the missing data I decided to use the mode to replace the missing values (‘Numcompaniesworked’, ‘TotalWorkingYears’, ‘EnvironmentSatisfaction’, ‘JobSatisfaction’ and ‘WorkLifeBalance ‘) because they will not make a significant difference compared to the next highest value and we are dealing with integers.
+Looking at the missing data I decided to use the mode to replace the missing values (‘Numcompaniesworked’, ‘TotalWorkingYears’, ‘EnvironmentSatisfaction’, ‘JobSatisfaction’ and ‘WorkLifeBalance ‘) because they will not make a significant difference compared to the next higher or lower value and those values are only integers.
 
 ## Exploring Data
 
 Once I replaced the missing values, I merged the data frames. After this I created histograms for every numerical variable to have an approach with the distribution of values and understand a bit more about them. Following this line, I could easily drop some variables that have no value for our work.
 
-After that, to understand the scenario and analyze our problem I created data frames per each variable splitting the total number of employees by staying in the company or not and its respective percentage. Then I used different kinds of visualizations like bars, boxplots, violin plots, etc. depending on each variable.
+After that, to understand the scenario and analyze our problem I created data frames per each variable splitting the total number of employees by staying in the company or not and its respective percentage. Then I used different kinds of visualizations like bars, boxplots, violin plots, etc. depending on each variable. 
 
-In some cases when my experience in Human Resources field tells me to explore deeper, I created visualizations combining some variables specially to explain how some correlations work. This is extremely useful for recommendations.
+In some cases when my experience in Human Resources field tells me to explore deeper, I created visualizations combining some variables specially to explain how some correlations work. This is extremely useful for recommendations. I created functions for most of the visualizations. This is a good practice I try to do as much as possible to consume less time and avoid errors.
 
 Here I want to mention just some of the variables that have a mayor impact direct or indirectly on attrition.
 
 ### Attrition
 
-This is our target variable, and the first action is to transform values from object to numerical and then I got some insights about it. 16% of employees leaved the company last year. This number could be tricky when you try to understand it because it may vary between different variables. When we talk about attrition, we necessarily talk about money that leaks out, is a hidden cost, hard to track and hard to explain too. That is why sometimes companies explain its cost with time invested on training or customer service quality.
+This is our target variable, and the first action is to transform values from object to numerical and then I got some insights about it. 16% of employees leaved the company last year.  When we talk about attrition, we necessarily talk about money that leaks out, is a hidden cost, hard to track and hard to explain sometimes. That is why companies explain its cost with time invested on training or customer service quality.
 It is part of the exploration to compare variables by attrition and we must pay attention on those whose have an attrition percentage considerable upper or lower than 16.
 
 ![](https://i.imgur.com/AUwnYwp.png)
@@ -93,7 +94,6 @@ As you can see, employees who recieved the highest percent salary hike leaved mo
 ![](https://i.imgur.com/Upt5gG0.png)
 
 
-
 After analyze each variable I dropped 'EmployeeCount', 'StandardHours', 'PerformanceRating', 'StockOptionLevel', 'Ages', 'Income' and 'Over18'.
 
 Once the exploration work is done, I created dummy variables for categorical. We cannot forget to drop those columns, if not, the model is going to take it twice.
@@ -114,6 +114,19 @@ This is the most important step of modeling: Choose your model.
 Looking at the results I am selecting Random Forest Classifier for its 93% accuracy, but I am also interested in how this model could impact on medium - long term. This is not just about who is prone to leave. To me, this is more about how the company should pay more attention on hiring and retainment staff. That is the reason why I am choosing Random Forest Classifier as the best model for this case. The model predicts the higher number of true positives compared with the other models. It also predicts that 65 are going to leave the company but they are actually not. This is called a False Positive and, in this case, for this company, means that those employees could have a high risk to leave, it is like a yellow flag to track them. Here I ask myself: Can the Human Resources department handle or support other departments with this? They have the highest percentage of attrition, and it seems that HR employees are not happy working there, I mean, HR have serious problems to solve first.
 
 ![](https://i.imgur.com/gKhgXPE.png)
+
+
+### Insights
+
+* 57% of employees from 18 to 20 years old leaved the company last year. 29% of employees from 21 to 25 years old leaved the company las year
+
+* Human Resources department has problems, we cannot figure it out what is exactly happening and there is not enough evidence to determine the real impact of this issue. Are they hiring under the right profile? Are they hiring on time? Do they support enough to other departments?
+
+* The company has a problem retaining talent, we can see more turnover on 4 rated employees in Job Involvement than those who got 1. We can also see that the highest percentage of turnover is in those employees who had the highest salary increasing. This has no sense, why are they increasing 25% their salary and leaving the company?
+
+* Those employees with 1 year with their current manager tend to leave more than those with more. This is particularly interesting assuming that 14% (42) of the managers leaved the company last year
+
+* Single employees are 26% prone to leave the company
 
 
 
