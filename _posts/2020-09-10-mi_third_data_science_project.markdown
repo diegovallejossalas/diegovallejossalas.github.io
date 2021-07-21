@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Mi third data science project"
-date:       2020-09-10 18:33:19 +0000
+date:       2020-09-10 14:33:20 -0400
 permalink:  mi_third_data_science_project
 ---
 
@@ -44,7 +44,7 @@ df['voice mail plan'] = df['voice mail plan'].replace(['yes','no'],[1,0])
 
 We hace 3332 customers in the dataset. From those, 2850 stayed and 483 churned. That means that 14.5% of our customers churned.
 
-![](http://i.imgur.com/wwCYiWj.png)
+![](https://i.imgur.com/wwCYiWj.png')
 
 Loocking at the data we realized that we needed to pay special attention to some features. The first one was Customer Service Calls. This means that the number of times that a customer called the company has a strong relationship with churn. As we can observe in the next chart, as soon as the customer calls more than 3 times, it has more than 50% or chances to churn. Clearly the company is not solving some problems.
 
