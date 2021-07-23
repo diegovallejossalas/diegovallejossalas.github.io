@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Time Series Analysis"
-date:       2021-03-13 03:17:26 +0000
+date:       2021-03-12 22:17:27 -0500
 permalink:  time_series_analysis
 ---
 
@@ -59,25 +59,25 @@ Then we need to classify the ten zipcodes to take the best 5. This means best po
 
 32822 is our best zipcode. The forecast for the next two years is +23.29 % of profit. Best case scenario is 50.93 % and worst case scenario is 3.65 %. Even if everything goes wrong we will make a profit. Another very important factor to choose this zipcode is that the area has 24,862 houses but only 21,111 are occupied. We have a great opportunity to invest with a guaranteed return on a very high number of options. One thing to consider is that the median household income is $ 32,903, we need to investigate more about how our target.
 
-![](https://imgur.com/kUNM13I)
+![](https://i.imgur.com/kUNM13I.png)
 
 32804 is in second place. The forecast for the next two years is +27.03 % of profit. Best case scenario is +50.38 % and worst case scenario is -1.31 %. Not so bad. There are almost 1,000 available houses and the median household income is $ 58,548
 
-![](https://imgur.com/e8SrMD8)
+![](https://i.imgur.com/e8SrMD8.png)
 
 32807 is in third place. The forecast for the next two years is +25.02 % of profit. Best case scenario is +54.42 % and worst case scenario is -3.60 %.
 
-![](https://imgur.com/CrRCwPU)
+![](https://i.imgur.com/CrRCwPU.png)
 
 32817 is in fourth place. The forecast for the next two years is +22.47 % of profit. Best case scenario is +48.31 % and worst case scenario is -3.36 %.
 
-![](https://imgur.com/7oLuyKa)
+![](https://i.imgur.com/7oLuyKa.png)
 
 The fifth zipcode is 32814. The forecast for the next two years is +16.76 % of profit. Best case scenario is +39.57 % and worst case scenario is -6.05 %. The median household income is $ 96,766 which is a huge opportunity to fix and improve the house in order to increase the price and profit.
 
-![](https://imgur.com/0N7EkDy)
+![](https://i.imgur.com/0N7EkDy.png)
 
-![](https://imgur.com/K4d7OPQ)
+![](https://i.imgur.com/K4d7OPQ.png)
 
 Thanks for your time!
 
